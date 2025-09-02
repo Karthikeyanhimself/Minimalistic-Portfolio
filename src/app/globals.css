@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure full-app height and prevent default scroll (page designed to fit one viewport) */
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+/* Optional: prevent page scroll globally so everything stays inside viewport.
+   If you prefer natural scrolling for long pages later, remove/override this. */
+body {
+  overflow: hidden;
+}
+
+/* Morph-only animation (border-radius changes) */
+@keyframes morph {
+
+  0%,
+  100% {
+    border-radius: 42% 58% 63% 37% / 42% 30% 70% 58%;
+  }
+
+  50% {
+    border-radius: 58% 42% 37% 63% / 58% 70% 30% 42%;
+  }
+}
+
+@keyframes morph-reverse {
+
+  0%,
+  100% {
+    border-radius: 58% 42% 37% 63% / 58% 70% 30% 42%;
+  }
+
+  50% {
+    border-radius: 42% 58% 63% 37% / 42% 30% 70% 58%;
+  }
+}
+
+/* Drift animations: transform-only for GPU compositing */
+@keyframes drift-left {
+  0% {
+    transform: translateX(-50%) translateY(0%) scale(1.25);
+  }
+
+  45% {
+    transform: translateX(-10%) translateY(-4%) scale(1.05);
+  }
+
+  65% {
+    transform: translateX(-6%) translateY(4%) scale(1.07);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0%) scale(1.25);
+  }
+}
+
+@keyframes drift-right {
+  0% {
+    transform: translateX(50%) translateY(0%) scale(1.25);
+  }
+
+  45% {
+    transform: translateX(10%) translateY(4%) scale(1.05);
+  }
+
+  65% {
+    transform: translateX(6%) translateY(-4%) scale(1.07);
+  }
+
+  100% {
+    transform: translateX(50%) translateY(0%) scale(1.25);
+  }
+}
+
+/* Blob base */
+.blob {
+  position: absolute;
+  pointer-events: auto;
+  /* allow hover */
+  mix-blend-mode: multiply;
+  opacity: 0.85;
+  will-change: transform, border-radius;
+  border-radius: 50%;
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), inset 0 0 25px rgba(255, 255, 255, 0.15);
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.1));
+  backdrop-filter: blur(2px);
+}
+
+.blob:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2), inset 0 0 30px rgba(255, 255, 255, 0.2);
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.15));
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+/* Left/right sizes & positions (no inline styles) */
+/* Keep blobs responsive but limited so they don't push content / overflow */
+.blob--left {
+  left: clamp(0.5rem, 4vw, 3rem);
+  top: clamp(2rem, 8vh, 6rem);
+  width: clamp(160px, 28vw, 420px);
+  height: clamp(160px, 28vw, 420px);
+  transform-origin: center;
+}
+
+.blob--right {
+  right: clamp(0.5rem, 4vw, 3rem);
+  bottom: clamp(2rem, 8vh, 6rem);
+  width: clamp(160px, 28vw, 420px);
+  height: clamp(160px, 28vw, 420px);
+  transform-origin: center;
+}
+
+/* Combine morph + drift (different properties so they compose) */
+.animate-morph-float-left {
+  animation:
+    morph 18s ease-in-out infinite,
+    drift-left 30s ease-in-out infinite;
+}
+
+.animate-morph-float-right {
+  animation:
+    morph-reverse 20s ease-in-out infinite,
+    drift-right 34s ease-in-out infinite;
+}
+
+/* Ensure isolation context for blend modes */
+.isolate {
+  isolation: isolate;
+}
+
+/* Button gradient sliding helper */
+.btn-gradient {
+  background-size: 200% 100%;
+  background-position: left center;
+  transition: background-position 400ms ease, box-shadow 180ms ease, transform 150ms ease;
+}
+
+.btn-gradient:hover {
+  background-position: right center;
+}
+
+/* Respect reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+
+  .blob,
+  .btn-gradient {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Make sure the main area will center content and not overflow */
+main,
+.h-full {
+  height: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
