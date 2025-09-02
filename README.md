@@ -3,7 +3,6 @@ A minimalistic Apple-inspired portfolio built with React, Next.js, and TypeScrip
 
 
 ---
----
 
 ## ✨ Features  
 
