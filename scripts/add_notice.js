@@ -11,10 +11,16 @@ const notice = `/*
 const targetDirs = ["src", "public"];
 const rootDir = path.resolve(__dirname, "..");
 
+// Only add notice to these file types
+const allowedExtensions = ['.js', '.ts', '.tsx', '.html', '.css'];
+
 function addNoticeToFile(filePath) {
     if (!fs.existsSync(filePath) || fs.lstatSync(filePath).isDirectory()) {
         return;
     }
+
+    const ext = path.extname(filePath).toLowerCase();
+    if (!allowedExtensions.includes(ext)) return; // skip images/binaries
 
     let content = fs.readFileSync(filePath, "utf8");
 
