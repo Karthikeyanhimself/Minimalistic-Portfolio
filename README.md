@@ -58,16 +58,6 @@ npm start
 
 ---
 
-## 📌 Configuration  
-
-- Update your project details in:  
-  - `src/lib/projects-data.ts` → Add/edit projects  
-  - `src/components/ui/header.tsx` → Update navigation links  
-  - `src/components/ui/footer.tsx` → Update footer info  
-
-
----
-
 ## 🤝 Contributing  
 
 Pull requests are welcome! If you’d like to add new features or fix bugs, feel free to fork and submit a PR.  
