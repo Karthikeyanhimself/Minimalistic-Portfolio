@@ -1,3 +1,9 @@
+/* 
+ * Copyright (c) 2025 Your Name
+ * This file is part of Minimalistic Portfolio.
+ * Licensed under the MIT License. 
+ */
+
 // src/components/project-card.tsx
 import Link from "next/link";
 import type { Project } from "@/lib/projects-data";

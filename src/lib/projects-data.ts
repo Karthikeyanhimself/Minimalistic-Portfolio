@@ -1,3 +1,9 @@
+/* 
+ * Copyright (c) 2025 Your Name
+ * This file is part of Minimalistic Portfolio.
+ * Licensed under the MIT License. 
+ */
+
 // src/lib/projects-data.ts
 export interface Project {
   slug: string;

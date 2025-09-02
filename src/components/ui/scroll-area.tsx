@@ -1,3 +1,9 @@
+/* 
+ * Copyright (c) 2025 Your Name
+ * This file is part of Minimalistic Portfolio.
+ * Licensed under the MIT License. 
+ */
+
 "use client"
 
 import * as React from "react"

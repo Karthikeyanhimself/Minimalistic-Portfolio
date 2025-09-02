@@ -1,3 +1,9 @@
+/* 
+ * Copyright (c) 2025 Your Name
+ * This file is part of Minimalistic Portfolio.
+ * Licensed under the MIT License. 
+ */
+
 import { Github, Linkedin } from 'lucide-react';
 import { FaXTwitter, FaInstagram } from 'react-icons/fa6';
 import { SiGmail } from "react-icons/si";

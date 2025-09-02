@@ -1,3 +1,9 @@
+/* 
+ * Copyright (c) 2025 Your Name
+ * This file is part of Minimalistic Portfolio.
+ * Licensed under the MIT License. 
+ */
+
 // src/app/projects/[slug]/page.tsx
 import { projects } from '@/lib/projects-data';
 import { notFound } from 'next/navigation';
