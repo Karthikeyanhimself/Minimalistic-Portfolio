@@ -18,9 +18,10 @@ A minimalistic Apple-inspired portfolio built with React, Next.js, and TypeScrip
 
 ## 🛠️ Tech Stack  
 
+- [React](https://react.dev/)  
 - [Next.js](https://nextjs.org/)  
 - [TypeScript](https://www.typescriptlang.org/)  
-- [Tailwind CSS](https://tailwindcss.com/)  
+- [Tailwind CSS](https://tailwindcss.com/)   
 
 ---
 
