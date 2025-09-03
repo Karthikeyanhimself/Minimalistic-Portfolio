@@ -12,34 +12,25 @@ const targetDirs = ["src", "public"];
 const rootDir = path.resolve(__dirname, "..");
 
 // Only add notice to these file types
-const allowedExtensions = [".js", ".ts", ".tsx", ".html", ".css"];
-
-function fixNotice(content) {
-    // If an old notice with "Your Name" exists → replace it
-    if (content.startsWith("/*") && content.includes("Your Name")) {
-        return content.replace(/\/\*[\s\S]*?Minimalistic Portfolio[\s\S]*?\*\/\n\n/, notice);
-    }
-    // If already correct, skip
-    if (content.startsWith("/*") && content.includes("Karthikeyan Reddy T")) {
-        return null;
-    }
-    // Otherwise, prepend new notice
-    return notice + content;
-}
+const allowedExtensions = ['.js', '.ts', '.tsx', '.html', '.css'];
 
 function addNoticeToFile(filePath) {
-    if (!fs.existsSync(filePath) || fs.lstatSync(filePath).isDirectory()) return;
+    if (!fs.existsSync(filePath) || fs.lstatSync(filePath).isDirectory()) {
+        return;
+    }
 
     const ext = path.extname(filePath).toLowerCase();
     if (!allowedExtensions.includes(ext)) return; // skip images/binaries
 
     let content = fs.readFileSync(filePath, "utf8");
-    const updated = fixNotice(content);
 
-    if (updated && updated !== content) {
-        fs.writeFileSync(filePath, updated, "utf8");
-        console.log(`✔ Updated notice in ${filePath}`);
+    // Skip if notice already exists
+    if (content.startsWith("/*") && content.includes("Minimalistic Portfolio")) {
+        return;
     }
+
+    fs.writeFileSync(filePath, notice + content, "utf8");
+    console.log(`✔ Added notice to ${filePath}`);
 }
 
 function walkDir(dir) {
