@@ -1,5 +1,5 @@
 /* 
- * Copyright (c) 2025 Your Name
+ * Copyright (c) 2025 Karthikeyan Reddy T
  * This file is part of Minimalistic Portfolio.
  * Licensed under the MIT License. 
  */

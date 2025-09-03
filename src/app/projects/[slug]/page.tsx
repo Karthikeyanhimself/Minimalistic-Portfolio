@@ -1,5 +1,5 @@
 /* 
- * Copyright (c) 2025 Your Name
+ * Copyright (c) 2025 Karthikeyan Reddy T
  * This file is part of Minimalistic Portfolio.
  * Licensed under the MIT License. 
  */
@@ -59,17 +59,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                     key={tech}
                     variant="secondary"
                     style={fontStyle}
-                    className="
-            text-sm md:text-base 
-            text-gray-500 
-            font-light 
-            leading-relaxed
-            border border-gray-300
-            rounded
-            px-2 py-1
-            transition-colors duration-200
-            hover:bg-gray-100 hover:text-gray-700
-          "
+                    className="text-sm md:text-base text-gray-500 font-light leading-relaxed border border-gray-300 rounded px-2 py-1 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-700"
                   >
                     {tech}
                   </Badge>
