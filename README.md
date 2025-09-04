@@ -6,7 +6,7 @@ A minimalistic Apple-inspired portfolio built with React, Next.js, and TypeScrip
 
 ## ✨ Features  
 
-- ⚡ Built with **Next.js 15** (App Router)  
+- ⚡ Built with **Next.js** (App Router)  
 - 🎨 Styled with **Tailwind CSS**  
 - 🛠️ TypeScript support for type safety  
 - 📱 Fully responsive design  
@@ -60,7 +60,7 @@ npm start
 
 ## 🤝 Contributing  
 
-Pull requests are welcome! If you’d like to add new features or fix bugs, feel free to fork and submit a PR.  
+Pull requests are welcome! If you’d like to add new features or develop this further or fix bugs, feel free to fork and submit a PR.  
 
 ---
 
