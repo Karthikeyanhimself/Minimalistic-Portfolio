@@ -1,13 +1,11 @@
-# **App Name**: FolioFlow
+# **Minimalistic Portfolio**
 
 ## Core Features:
 
 - Project Gallery: Interactive project gallery showcasing work.
-- Case Studies: Detailed case studies for each project with images and text.
 - About Me: Elegant 'About Me' section with a professional bio.
 - Contact Form: Integrated contact form for direct messaging.
 - Smooth Transitions: Smooth page transitions for enhanced user experience.
-- Presentation AI Tool: AI powered tool to help suggest improvements to the presentation of your projects, such as what media to include, based on previously high-performing examples.
 
 ## Style Guidelines:
 
