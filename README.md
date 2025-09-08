@@ -4,19 +4,19 @@ A minimalistic Apple-inspired portfolio built with React, Next.js, and TypeScrip
 
 ---
 
-## ✨ Features  
+## Features  
 
-- ⚡ Built with **Next.js** (App Router)  
-- 🎨 Styled with **Tailwind CSS**  
-- 🛠️ TypeScript support for type safety  
-- 📱 Fully responsive design  
-- 🗂️ Project showcase with dynamic routing (`/projects/[slug]`)  
-- 📬 Contact page with simple form  
-- 🔄 Reusable and minimal components  
+- Built with **Next.js** (App Router)  
+- Styled with **Tailwind CSS**  
+- TypeScript support for type safety  
+- Fully responsive design  
+- Project showcase with dynamic routing (`/projects/[slug]`)  
+- Contact page with simple form  
+- Reusable and minimal components  
 
 ---
 
-## 🛠️ Tech Stack  
+## Tech Stack  
 
 - [React](https://react.dev/)  
 - [Next.js](https://nextjs.org/)  
@@ -25,16 +25,16 @@ A minimalistic Apple-inspired portfolio built with React, Next.js, and TypeScrip
 
 ---
 
-## 🚀 Getting Started  
+## Getting Started  
 
-### 1️⃣ Clone the repository  
+### Clone the repository  
 
 ```bash
 git clone https://github.com/Karthikeyanhimself/Minimalistic-Portfolio.git
 cd Minimalistic-Portfolio
 ```
 
-### 2️⃣ Install dependencies  
+### Install dependencies  
 
 ```bash
 npm install
@@ -42,14 +42,14 @@ npm install
 yarn install
 ```
 
-### 3️⃣ Run the development server  
+### Run the development server  
 
 ```bash
 npm run dev
 ```
 
 
-### 4️⃣ Build for production  
+### Build for production  
 
 ```bash
 npm run build
@@ -58,7 +58,7 @@ npm start
 
 ---
 
-## 🤝 Contributing  
+## Contributing  
 
 Pull requests are welcome! If you’d like to add new features or develop this further or fix bugs, feel free to fork and submit a PR.  
 
