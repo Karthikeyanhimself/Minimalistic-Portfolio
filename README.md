@@ -61,5 +61,3 @@ npm start
 ## Contributing  
 
 Pull requests are welcome! If you’d like to add new features or develop this further or fix bugs, feel free to fork and submit a PR.  
-
----
