@@ -27,7 +27,7 @@ export default function Footer() {
 
         {/* Right Side: Social Icons */}
         <div className="flex items-center space-x-6">
-          {/* X (Twitter) */}
+          {/* X*/}
           <div className="relative group flex flex-col items-center">
             <a
               href="https://x.com/Karthiktweetzzz"
@@ -72,22 +72,6 @@ export default function Footer() {
             </a>
             <span className="absolute -top-5 text-[10px] opacity-0 group-hover:opacity-100 transition-opacity" style={fontStyle}>
               LinkedIn
-            </span>
-          </div>
-
-          {/* Instagram */}
-          <div className="relative group flex flex-col items-center">
-            <a
-              href="https://www.instagram.com/karthikeyanhimself/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="hover:text-neutral-900 transition-colors"
-            >
-              <FaInstagram className="h-5 w-5" />
-            </a>
-            <span className="absolute -top-5 text-[10px] opacity-0 group-hover:opacity-100 transition-opacity" style={fontStyle}>
-              Instagram
             </span>
           </div>
 

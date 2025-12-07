@@ -85,33 +85,6 @@ export default function LandingPage() {
         >
           View Portfolio
         </button>
-
-        {/* Heading for Skills */}
-        <h2 className="mt-12 text-base md:text-xl font-apple text-neutral-900 tracking-tight">
-          Skills and Tools
-        </h2>
-
-        <div className="mt-11 flex flex-wrap justify-center gap-[7.5rem] text-4xl text-neutral-500">
-          {[
-            { Icon: SiReact, name: 'React' },
-            { Icon: SiNodedotjs, name: 'Node.js' },
-            { Icon: SiMysql, name: 'MySQL' },
-            { Icon: SiPython, name: 'Python' },
-            { Icon: SiCplusplus, name: 'C++' },
-            { Icon: LiaJava, name: 'Java' },
-            { Icon: SiMongodb, name: 'MongoDB' },
-            { Icon: SiGit, name: 'Git' },
-            { Icon: SiHuggingface, name: 'HuggingFace' },
-          ].map(({ Icon, name }, idx) => (
-            <div key={idx} className="relative group flex flex-col items-center">
-              <Icon className="h-7 w-7 text-neutral-500 transition-transform transition-colors duration-300 ease-in-out group-hover:scale-110 group-hover:text-black" />
-              <span className="absolute mt-11 text-xs font-apple font-light text-neutral-700 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
-                {name}
-              </span>
-            </div>
-          ))}
-        </div>
-
       </div>
     </div>
   )
