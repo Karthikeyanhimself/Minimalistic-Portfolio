@@ -30,7 +30,7 @@ export default function Footer() {
           {/* X*/}
           <div className="relative group flex flex-col items-center">
             <a
-              href="https://x.com/Karthiktweetzzz"
+              href="https://x.com/remains_here"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="X"
