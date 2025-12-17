@@ -81,7 +81,7 @@ export default function AboutPage() {
                         className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-lg flex-shrink-0"
                     >
                         <Image
-                            src="/images/profile.webp"
+                            src="/images/placeholder_400x400.webp"
                             alt="Profile Picture"
                             width={400}
                             height={400}
