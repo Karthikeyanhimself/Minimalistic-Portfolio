@@ -73,7 +73,7 @@ export default function AboutPage() {
     ];
 
     return (
-        <div className="container mx-auto px-4 py-16" style={fontStyle}>
+        <div className="container mx-auto px-4 py-16 min-h-screen" style={fontStyle}>
             <div className="max-w-4xl mx-auto">
                 <section className="flex flex-col md:flex-row items-center gap-12 mb-16">
                     <div

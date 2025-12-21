@@ -17,8 +17,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Karthikeyan Reddy',
-  description: 'A sleek MERN stack portfolio website with an Apple-inspired minimalist design.',
+  title: "Karthikeyan Reddy's Portfolio",
+  description: 'A minimalistic portfolio showcasing projects and skills.',
 };
 
 export default function RootLayout({

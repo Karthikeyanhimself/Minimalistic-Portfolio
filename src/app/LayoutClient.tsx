@@ -9,7 +9,6 @@
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Header from '@/components/header';
-import Footer from '@/components/footer';
 import { Toaster } from "@/components/ui/toaster";
 
 export default function LayoutClient({ children }: { children: React.ReactNode }) {
@@ -28,7 +27,6 @@ export default function LayoutClient({ children }: { children: React.ReactNode }
         <div className="relative flex min-h-dvh flex-col bg-background">
             {!hideHeaderFooter && <Header />}
             <main className="flex-1">{children}</main>
-            {!hideHeaderFooter && <Footer />}
             <Toaster />
         </div>
     );

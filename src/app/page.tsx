@@ -57,7 +57,7 @@ export default function LandingPage() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100dvh-0rem)] py-24 px-6 text-center">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen py-24 px-6 text-center">
         <h1 className="text-3xl md:text-5xl font-apple font-light text-neutral-900 tracking-tight">
           Karthikeyan Reddy T
         </h1>

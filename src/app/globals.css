@@ -12,7 +12,8 @@
 html,
 body,
 #__next {
-  height: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 /* Optional: prevent page scroll globally so everything stays inside viewport.
