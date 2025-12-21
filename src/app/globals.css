@@ -16,10 +16,9 @@ body,
   min-height: 100%;
 }
 
-/* Optional: prevent page scroll globally so everything stays inside viewport.
-   If you prefer natural scrolling for long pages later, remove/override this. */
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* Morph-only animation (border-radius changes) */

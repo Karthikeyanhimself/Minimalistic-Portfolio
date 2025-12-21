@@ -24,7 +24,7 @@ export default function LayoutClient({ children }: { children: React.ReactNode }
     if (!mounted) return null; // avoids hydration mismatch
 
     return (
-        <div className="relative flex min-h-dvh flex-col bg-background">
+        <div className="relative flex min-h-full flex-col bg-background">
             {!hideHeaderFooter && <Header />}
             <main className="flex-1">{children}</main>
             <Toaster />
